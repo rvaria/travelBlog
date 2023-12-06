@@ -1,0 +1,17 @@
+.header {
+    background-color: bisque;
+    padding-left: 10px;
+    display:flex;
+}
+
+.extra-links {
+    font-size: 1.6rem;
+    text-align:right;
+    width: 90%;
+    flex-direction: row;
+}
+
+li {
+    display: inline;
+    margin-left: 50px;
+}
