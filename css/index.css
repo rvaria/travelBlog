@@ -1,12 +1,13 @@
 .header {
-    background-color: bisque;
+    background-color: aliceblue;
     padding-left: 10px;
-    display:flex;
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .extra-links {
     font-size: 1.6rem;
-    text-align:right;
+    text-align: right;
     width: 90%;
     flex-direction: row;
 }
@@ -14,4 +15,31 @@
 li {
     display: inline;
     margin-left: 50px;
+}
+
+#homeImage {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.blogBox {
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 25px;
+    float: left;
+}
+
+.blogBox:hover {
+    background: aliceblue;
+    transform: scale(1.05);
+}
+
+.blogBox img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
