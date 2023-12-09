@@ -5,8 +5,6 @@
     margin-bottom: 50px;
 }
 
-#home:hover {}
-
 .extra-links {
     font-size: 1.6rem;
     text-align: right;
@@ -19,6 +17,12 @@ li {
     margin-left: 50px;
 }
 
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 #homeImage {
     display: block;
     margin: auto;
@@ -26,17 +30,28 @@ li {
     margin-bottom: 50px;
 }
 
-.container {
+#intro {
+    white-space:pre;
+    font-size:15px;
+    background-color: white;
+    color:black;
+    position: absolute;
+    margin:0px;
+    padding:0.5%;
+    top: 25%;
+    left: 15%;
+}
+
+.blogContainer {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 
 .blogBox {
-    width: 350px;
-    height: auto;
+    width: 33.3%;
     border: 1px solid black;
     padding: 10px;
     margin: 25px;
