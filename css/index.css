@@ -8,9 +8,9 @@
 .header a {
     padding:10%;
     text-decoration:none;
+    background-color:aqua;
     color:inherit;
 }
-
 
 .extra-links {
     font-size: 1.6rem;
@@ -22,6 +22,12 @@
 li {
     display: inline;
     margin-left: 50px;
+    background-color:aliceblue;
+    padding: 0.8%;
+}
+
+li:hover {
+    background-color:aqua;   
 }
 
 #homeImage {
