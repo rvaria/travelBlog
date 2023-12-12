@@ -1,0 +1,14 @@
+#about {
+    text-align:center;
+}
+
+p {
+    padding-left:50px;
+    font-size:20px;
+    text-align:center;
+}
+
+#aboutPage {
+    background-color:aqua;
+    padding:1%;
+}

@@ -1,29 +1,3 @@
-.header {
-    background-color: aliceblue;
-    padding-left: 10px;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.header a {
-    padding:10%;
-    text-decoration:none;
-    color:inherit;
-}
-
-
-.extra-links {
-    font-size: 1.6rem;
-    text-align: right;
-    width: 90%;
-    flex-direction: row;
-}
-
-li {
-    display: inline;
-    margin-left: 50px;
-}
-
 #homeImage {
     display: block;
     margin: auto;
@@ -36,6 +10,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 4s;
 }
 
 .blogBox {
