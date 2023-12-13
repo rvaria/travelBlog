@@ -1,29 +1,6 @@
-.header {
-    background-color: aliceblue;
-    padding-left: 10px;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.header a {
-    padding:10%;
-    text-decoration:none;
+#homeLink {
     background-color:aqua;
-    color:inherit;
-}
-
-.extra-links {
-    font-size: 1.6rem;
-    text-align: right;
-    width: 90%;
-    flex-direction: row;
-}
-
-li {
-    display: inline;
-    margin-left: 50px;
-    background-color:aliceblue;
-    padding: 0.8%;
+    padding:7%;
 }
 
 li:hover {
@@ -46,7 +23,6 @@ li:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 4s;
 }
 
 .blogBox {
@@ -70,7 +46,7 @@ li:hover {
 }
 
 .fade {
-    animation: fadeIn 2s;
+    animation: fadeIn 1.3s;
     animation-fill-mode:forwards;
 }
 

@@ -20,4 +20,6 @@
 li {
     display: inline;
     margin-left: 50px;
+    background-color:aliceblue;
+    padding: 0.8%;
 }
