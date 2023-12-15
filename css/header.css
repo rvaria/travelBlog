@@ -20,6 +20,10 @@
 li {
     display: inline;
     margin-left: 50px;
-    background-color:aliceblue;
     padding: 0.8%;
+    border: 2px solid transparent;
+}
+
+li:hover {
+    border: 2px solid black;
 }

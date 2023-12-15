@@ -1,10 +1,6 @@
 #homeLink {
-    background-color:aqua;
+    border: 2px solid black;
     padding:7%;
-}
-
-li:hover {
-    background-color:aqua;   
 }
 
 #homeImage {
@@ -25,6 +21,11 @@ li:hover {
     align-items: center;
 }
 
+.blogContainer a {
+    text-decoration:none;
+    color:inherit;
+}
+
 .blogBox {
     width: 350px;
     border: 1px solid black;
@@ -43,14 +44,4 @@ li:hover {
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
-
-.fade {
-    animation: fadeIn 1.3s;
-    animation-fill-mode:forwards;
-}
-
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100%{opacity:1;}
 }
