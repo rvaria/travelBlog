@@ -3,6 +3,13 @@
     padding-left: 10px;
     display: flex;
     margin-bottom: 50px;
+    align-items:baseline;
+}
+
+.header h1 {
+    font-size:30px;
+    border: 2px solid black;
+    padding:0.5%;
 }
 
 .header a {
