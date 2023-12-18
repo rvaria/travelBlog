@@ -2,12 +2,10 @@
     display: block;
     margin: auto;
     width: 90%;
+    max-height:630px;
+    overflow:none;
     margin-bottom: 50px;
 } 
-
-.imageContainer {
-    opacity:0;
-}
 
 .blogContainer {
     display: flex;
