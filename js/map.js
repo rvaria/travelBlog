@@ -1,11 +1,12 @@
 var map = L.map('map').setView([30, 0], 2.5);
 map.doubleClickZoom.disable();
+var bounds = L.latLngBounds([-90, -180], [90, 180]);
+map.setMaxBounds(bounds);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    noWrap: true,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-
-
 
 var croatia = L.marker([43.4, 16.6]).addTo(map).bindPopup('<a href="../pages/croatia.html">Croatia</a>');
 
