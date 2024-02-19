@@ -1,0 +1,11 @@
+#home {
+    border: 2px solid transparent;
+}
+
+#home:hover {
+    border: 2px solid black;
+}
+
+#mapPage {
+    border: 2px solid black;
+}
