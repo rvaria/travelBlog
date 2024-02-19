@@ -9,3 +9,15 @@
 #mapPage {
     border: 2px solid black;
 }
+
+html, body {
+    height: 100%;
+}
+
+#map {
+    
+    height: 80%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
