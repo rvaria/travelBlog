@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="../css/header.css" />
-        <link rel="stylesheet" type="text/css" href="../css/map.css" />
-    </head>
-    <body>
-        <header class="header">
-            <h1 id="home">
-                <a href=../index.html>Home</a>
-            </h1>
-            <nav class="extra-links">
-                <ul>
-                    <li id ="mapPage">
-                        <a href ="map.html">Map</a>
-                    </li>
-                    <li>Images</li>
-                    <li id ="aboutPage">
-                        <a href ="about.html">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/map.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="home">
+            <a href=../index.html>Home</a>
+        </h1>
+        <nav class="extra-links">
+            <ul>
+                <li id="mapPage">
+                    <a href="map.html">Map</a>
+                </li>
+                <li>Images</li>
+                <li id="aboutPage">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/map.js"></script>
+</body>
+
 </html>
