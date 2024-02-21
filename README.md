@@ -1,4 +1,4 @@
 # travelBlog
 Simple personal travel blog website 
 
-rvaria.github.io/travelBlog/
+[Travel Blog](rvaria.github.io/travelBlog/)
