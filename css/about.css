@@ -2,13 +2,21 @@
     text-align:center;
 }
 
+#home {
+    border: 2px solid transparent;
+}
+
+#home:hover {
+    border: 2px solid black;
+}
+
 p {
-    padding-left:50px;
+    margin:auto;
+    width:80%;
     font-size:20px;
     text-align:center;
 }
 
 #aboutPage {
     border: 2px solid black;
-    padding:0.7%;
 }
