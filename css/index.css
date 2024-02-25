@@ -2,8 +2,6 @@
     display: block;
     margin: auto;
     width: 90%;
-    max-height:630px;
-    overflow:none;
     object-fit:cover;
     margin-bottom: 50px;
 } 
