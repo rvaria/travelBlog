@@ -15,7 +15,7 @@ class CommentSection extends HTMLElement {
             padding:15px;
         }
         
-        #name {
+        #comment {
             text-align:left;
             border-radius: 5px;
             padding: 20px;
@@ -33,19 +33,37 @@ class CommentSection extends HTMLElement {
         }
         </style>
         <div id="comments-container">
-            <div id="name">
-                <label for="fname">Enter name</label>
-                <input type="text" placeholder="Your name..">
+            <div id="comment">
+                <label>Enter name
+                    <input id="name" type="text" placeholder="Your name..">
+                </label>
             </div>
-            <div id="name">
-                <label for="fname">Enter comment</label>
-                <input type="text" id="enterComment"  placeholder="Your comment..">
+            <div id="comment">
+                <label>Enter comment
+                    <input id="enterComment" type="text" placeholder="Your comment..">
+                </label>
             </div>
-            <button type="button">Add</button>
+            <button id="commentButton" type="button">Add</button>
         </div>
         `;
+
+        const commentID = this.id;
+        const commentButton = this.querySelector('#commentButton');
+        const nameInput = this.querySelector('#name');
+        const commentInput = this.querySelector('#enterComment');
+        
+        commentButton.addEventListener("click", function() {
+            click(nameInput, commentInput);
+        });
+
     }
-    
-  }
+
+}
 
 window.customElements.define('comment-section', CommentSection);
+
+function click(nameInput, commentInput) {
+    alert(nameInput.value);
+    alert(commentInput.value);
+}
+
