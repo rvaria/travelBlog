@@ -53,7 +53,7 @@ class CommentSection extends HTMLElement {
         const commentInput = this.querySelector('#enterComment');
         
         commentButton.addEventListener("click", function() {
-            click(nameInput, commentInput);
+            click(commentID, nameInput, commentInput);
         });
 
     }
@@ -62,7 +62,7 @@ class CommentSection extends HTMLElement {
 
 window.customElements.define('comment-section', CommentSection);
 
-function click(nameInput, commentInput) {
+function click(commentID, nameInput, commentInput) {
     alert(nameInput.value);
     alert(commentInput.value);
 }
