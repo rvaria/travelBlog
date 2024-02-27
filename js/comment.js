@@ -33,17 +33,19 @@ class CommentSection extends HTMLElement {
         }
         </style>
         <div id="comments-container">
-            <div id="comment">
-                <label>Enter name
-                    <input id="name" type="text" placeholder="Your name..">
-                </label>
+            <form>
+                <div id="comment">
+                    <label>Enter name
+                        <input id="name" type="text" placeholder="Your name.." required>
+                    </label>
             </div>
             <div id="comment">
                 <label>Enter comment
-                    <input id="enterComment" type="text" placeholder="Your comment..">
+                    <input id="enterComment" type="text" placeholder="Your comment.." required>
                 </label>
             </div>
-            <button id="commentButton" type="button">Add</button>
+            <button id="commentButton" type="submit">Add</button>
+            </form>
         </div>
         `;
 
@@ -51,9 +53,12 @@ class CommentSection extends HTMLElement {
         const commentButton = this.querySelector('#commentButton');
         const nameInput = this.querySelector('#name');
         const commentInput = this.querySelector('#enterComment');
-        
-        commentButton.addEventListener("click", function() {
-            click(commentID, nameInput, commentInput);
+
+        commentButton.addEventListener("click", function (e) {
+            if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
+                click(commentID, nameInput, commentInput);
+                e.preventDefault();
+            }
         });
 
     }
