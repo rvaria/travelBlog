@@ -1,10 +1,13 @@
-class CommentSection extends HTMLElement {
+import {addComment} from './firebaseCall.js';
 
+export class CommentSection extends HTMLElement {
+   
     constructor() {
         super();
     }
 
     connectedCallback() {
+        
         this.innerHTML = `
         <style>
         #comments-container {
@@ -56,19 +59,13 @@ class CommentSection extends HTMLElement {
 
         commentButton.addEventListener("click", function (e) {
             if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
-                click(commentID, nameInput, commentInput);
+                addComment(commentID, nameInput, commentInput);
                 e.preventDefault();
             }
         });
 
     }
-
 }
 
 window.customElements.define('comment-section', CommentSection);
-
-function click(commentID, nameInput, commentInput) {
-    alert(nameInput.value);
-    alert(commentInput.value);
-}
 
