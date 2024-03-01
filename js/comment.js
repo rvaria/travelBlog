@@ -1,13 +1,13 @@
-import {addComment} from './firebaseCall.js';
+import { addComment } from './firebaseCall.js';
 
 export class CommentSection extends HTMLElement {
-   
+
     constructor() {
         super();
     }
 
     connectedCallback() {
-        
+
         this.innerHTML = `
         <style>
         #comments-container {
@@ -59,7 +59,22 @@ export class CommentSection extends HTMLElement {
 
         commentButton.addEventListener("click", function (e) {
             if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
-                addComment(commentID, nameInput, commentInput);
+                // addComment(commentID, nameInput, commentInput);
+                try {
+                    var addData = firebase.functions().httpsCallable('addData');
+                    addData({
+                        id: blogID,
+                        name: nameInput,
+                        comment: commentInput,
+                    })
+                        .then((result) => {
+                            // Return result from cloud function
+                            var message = result.data.text;
+                            console.log(message);
+                        });
+                } catch {
+                    console.log("not working");
+                }
                 e.preventDefault();
             }
         });
