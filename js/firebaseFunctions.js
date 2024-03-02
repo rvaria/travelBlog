@@ -46,16 +46,22 @@ export function retrieveComments(blogID) {
                     
                     #container {
                         margin:auto;
-                        width:60%;
+                        width:52%;
                         text-align:left;
                         background-color: #f2f2f2;
                         border: 5px solid white;
-                        padding:15px;
+                        padding-left:2%;
                     }
 
                     #username {
                         font-weight: bold;
-                        text-size: 50px;
+                        font-size: 25px;
+                        margin-bottom: 0px;
+                    }
+
+                    #comment {
+                        margin-top: 0px;
+                        font-size: 15px;
                     }
 
                     </style>

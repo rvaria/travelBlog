@@ -33,18 +33,19 @@ export class CommentSection extends HTMLElement {
         }
         
         button {
+            font-family: inhert;
             padding:2%;
         }
         </style>
         <div id="comments-container">
             <form>
                 <div id="comment">
-                    <label>Enter name
+                    <label>Enter name:
                         <input id="name" type="text" placeholder="Your name.." required>
                     </label>
             </div>
             <div id="comment">
-                <label>Enter comment
+                <label>Enter comment:
                     <input id="enterComment" type="text" placeholder="Your comment.." required>
                 </label>
             </div>
