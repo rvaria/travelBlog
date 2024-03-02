@@ -28,18 +28,19 @@ export function retrieveComments(blogID) {
     const db = getDatabase();
     const dbPath = ref(db, `/${blogID}/`);
 
+    const commentDiv = document.getElementById("commentList");
+
     try {
         onValue(dbPath, (snapshot) => {
             const data = snapshot.val();
             if (data) {
+                commentDiv.innerHTML = ``;
                 snapshot.forEach((childSnapshot) => {
                     const username = childSnapshot.val().username;
                     const comment = childSnapshot.val().comment;
                     
                     console.log(username);
                     console.log(comment);
-
-                    const commentDiv = document.getElementById("commentList");
                     commentDiv.innerHTML += 
                     `<style>
                     
