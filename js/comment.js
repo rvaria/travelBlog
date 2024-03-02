@@ -1,4 +1,5 @@
-import { addComment } from './firebaseCall.js';
+import { addComment } from './firebaseFunctions.js';
+import { retrieveComments } from './firebaseFunctions.js';
 
 export class CommentSection extends HTMLElement {
 
@@ -12,7 +13,7 @@ export class CommentSection extends HTMLElement {
         <style>
         #comments-container {
             margin:auto;
-            width:45%;
+            width:40%;
             text-align:center;
             background-color: #f2f2f2;
             padding:15px;
@@ -52,14 +53,16 @@ export class CommentSection extends HTMLElement {
         </div>
         `;
 
-        const commentID = this.id;
+        const blogID = this.id;
         const commentButton = this.querySelector('#commentButton');
         const nameInput = this.querySelector('#name');
         const commentInput = this.querySelector('#enterComment');
 
+        retrieveComments(blogID);
+
         commentButton.addEventListener("click", function (e) {
             if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
-                addComment(commentID, nameInput.value, commentInput.value);
+                addComment(blogID, nameInput.value, commentInput.value);
                 e.preventDefault();
             }
         });
