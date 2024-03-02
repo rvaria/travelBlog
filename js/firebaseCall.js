@@ -1,17 +1,23 @@
 import "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-import "https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js";
+import { getDatabase, ref, push, child } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+import { initFirebase } from "./firebaseInit.js";
 
 export function addComment(blogID, nameInput, commentInput) {
 
-    var addData = firebase.functions().httpsCallable('addData');
-    addData({
-        id: blogID,
-        name: nameInput,
-        comment: commentInput,
-    })
-        .then((result) => {
-            // Return result from cloud function
-            var message = result.data.text;
-            console.log(message);
-        }); 
+    initFirebase();
+    try {
+        const db = getDatabase();
+        const dbPath = ref(db, `/${blogID}/`);
+
+        push(dbPath, {
+            username: nameInput,
+            comment: commentInput,
+        }).then((data) => {
+            console.log("Data written successfully", data);
+        }).catch((error) => {
+            console.log("Error: " + error);
+        });
+    } catch (error) {
+        console.log("Error: " + error);
+    }
 } 

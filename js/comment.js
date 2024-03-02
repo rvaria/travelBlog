@@ -59,22 +59,7 @@ export class CommentSection extends HTMLElement {
 
         commentButton.addEventListener("click", function (e) {
             if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
-                // addComment(commentID, nameInput, commentInput);
-                try {
-                    var addData = firebase.functions().httpsCallable('addData');
-                    addData({
-                        id: blogID,
-                        name: nameInput,
-                        comment: commentInput,
-                    })
-                        .then((result) => {
-                            // Return result from cloud function
-                            var message = result.data.text;
-                            console.log(message);
-                        });
-                } catch {
-                    console.log("not working");
-                }
+                addComment(commentID, nameInput.value, commentInput.value);
                 e.preventDefault();
             }
         });
