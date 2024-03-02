@@ -38,9 +38,7 @@ export function retrieveComments(blogID) {
                 snapshot.forEach((childSnapshot) => {
                     const username = childSnapshot.val().username;
                     const comment = childSnapshot.val().comment;
-                    
-                    console.log(username);
-                    console.log(comment);
+
                     commentDiv.innerHTML += 
                     `<style>
                     

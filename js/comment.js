@@ -63,7 +63,10 @@ export class CommentSection extends HTMLElement {
 
         commentButton.addEventListener("click", function (e) {
             if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
+                
                 addComment(blogID, nameInput.value, commentInput.value);
+                nameInput.value = "";
+                commentInput.value = "";
                 e.preventDefault();
             }
         });

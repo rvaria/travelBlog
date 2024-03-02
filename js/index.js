@@ -14,7 +14,7 @@ function fadePage() {
             }
         });
     }, {
-        threshold: 0.4,
+        threshold: 0.3,
     });
 
     blogBoxes.forEach((blog) => {
