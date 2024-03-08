@@ -3,4 +3,4 @@ Personal travel blog website written in HTML5, CSS3, and JavaScript. Deployed wi
 
 Includes several personal blogs each with their own commenting systems that update real-time. Also makes use of the LeafletJS library to provide an interactive map.
 
-[Travel Blog](https://travelblog-4a5f5.firebaseapp.com/)
+[Travel Blog](https://travelblog-4a5f5.web.app/)
