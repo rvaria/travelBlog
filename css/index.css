@@ -37,3 +37,13 @@
     width: 100%;
     object-fit: contain;
 }
+
+@media (max-width:480px) {
+    #homeImage {
+        width: 100%;
+    }
+
+    .blogBox {
+        max-width: 70%;
+    }
+}

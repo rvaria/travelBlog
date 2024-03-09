@@ -20,3 +20,14 @@ p {
 #aboutPage {
     border: 2px solid black;
 }
+
+@media (max-width:480px) {
+    #about {
+        font-size:30px;
+    }
+
+    p {
+       font-size:18px;
+       max-width:90%;
+    }
+}

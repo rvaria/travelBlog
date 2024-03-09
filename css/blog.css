@@ -1,5 +1,4 @@
 #home {
-    
     border: 2px solid transparent;
 }
 
@@ -32,10 +31,21 @@
     height: auto; 
     margin:auto;
     display: block; 
-    padding:1%;
-    
+    padding: 1%;   
 }
 
 #gap {
-    height: 20px;
+    height: 5vh;
+}
+
+@media (max-width:480px) {
+    #title {
+        font-size:30px;
+        text-align:center;
+    }
+
+    .blog {
+       font-size:18px;
+       max-width:90%;
+    }
 }

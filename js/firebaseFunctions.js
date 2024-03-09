@@ -63,6 +63,12 @@ export function retrieveComments(blogID) {
                         font-size: 15px;
                     }
 
+                    @media (max-width: 480px) {
+                        #container {
+                            width: 80%;
+                        }
+                    }
+
                     </style>
                     <div id="container">
                     <p id="username">${username}</p>

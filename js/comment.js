@@ -44,8 +44,14 @@ export class CommentSection extends HTMLElement {
             padding:2% 4%;
             background-color: #edfff8;
             font-family: "Arial";
-            
         }
+
+        @media (max-width: 480px) {
+            #comments-container {
+                width: 70%;
+            }
+        }
+
         </style>
         <div id="comments-container">
             <p id="prompt">Leave a comment</p>
