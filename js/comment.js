@@ -15,8 +15,10 @@ export class CommentSection extends HTMLElement {
             margin:auto;
             width:40%;
             text-align:center;
-            background-color: #f2f2f2;
+            background-color: #edfff8;
             padding:15px;
+            border-radius: 5%;
+            font-family: "Arial";
         }
         
         #comment {
@@ -31,13 +33,22 @@ export class CommentSection extends HTMLElement {
           margin: 8px;
           box-sizing: border-box;
         }
+
+        #prompt {
+            font-size: 20px;
+            font-weight: bold;
+        }
         
-        button {
+        #commentButton {
             font-family: inhert;
-            padding:2%;
+            padding:2% 4%;
+            background-color: #edfff8;
+            font-family: "Arial";
+            
         }
         </style>
         <div id="comments-container">
+            <p id="prompt">Leave a comment</p>
             <form>
                 <div id="comment">
                     <label>Enter name:

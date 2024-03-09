@@ -46,14 +46,15 @@ export function retrieveComments(blogID) {
                         margin:auto;
                         width:52%;
                         text-align:left;
-                        background-color: #f2f2f2;
+                        background-color: #edfff8;
                         border: 5px solid white;
-                        padding-left:2%;
+                        padding-left:2%;    
+                        font-family: "Arial";               
                     }
 
                     #username {
                         font-weight: bold;
-                        font-size: 25px;
+                        font-size: 20px;
                         margin-bottom: 0px;
                     }
 
